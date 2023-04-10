@@ -1,4 +1,6 @@
 void main(){
+
+  // #1 VARIABLES
   String name = '유나'; // var == type 추론
   name = 'una'; // data type 유지
   // class property 지정할 때는 type 명시해줌. 
@@ -37,9 +39,25 @@ String? nico = 'nico';
    * 모르는 값이거나 사용자가 입력하는 값이라면 final.
    */
   
+  // #2 DATA TYPES
   /**
-   * 
+   *  class속 object로 이루어져 있어..
    */
+    int x = 100;
+    double y = 9.98;
+    num n = 11; // num은 integer or floating-number
+
+    /**
+     *  #2.1 Lists
+     * collection if
+     * collection for
+     */
+    var giveMeFive = true;
+    var numbers = [1, 2, 3, 4, ];
+    List<int> numbers2 = [1, 2, 3, 4, if(giveMeFive) 5, ];
+    print(numbers2);
+
+
 
 
 } 
