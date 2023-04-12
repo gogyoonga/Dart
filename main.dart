@@ -57,7 +57,44 @@ String? nico = 'nico';
     List<int> numbers2 = [1, 2, 3, 4, if(giveMeFive) 5, ];
     print(numbers2);
 
+    /**
+     *  #2.4 Maps
+     *  
+     */
+    var player = {
+        'name' : 'nico',
+        'xp' : 19.99,
+        'superpower' : false,
+    };
+    Map<List<int>, bool> player2 = {
+      [1, 2, 3, 4] : true,
+    };
+    List<Map<String, Object>> players = [
+      {
+        'name' : 'nico',
+        'xp' : 199993.999,
+      },
+      {
+        'name' : 'nico',
+        'xp' : 199993.999,
+      },
+    ];
 
+    /**
+     *  # 2.5 Sets
+     *  List와 비교되는 Set!!
+     *  명시적으로 Set으로 선언할 수 있고 var을 이용할 수도 있어.
+     */
+    Set<int> numbers3 = {1, 2, 3, 4};
+    numbers3.add(1);
+    numbers3.add(1); // 이렇게 추가를 해도
+    print(numbers3); // 출력 결과는 1, 2, 3, 4임.
 
+/** #3.0 Defining a Function */
+print(sayHello(name));
 
 } 
+
+String sayHello(String name) =>  "Hello $name nice to meet you!";
+
+/**     ------------------    */
