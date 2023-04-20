@@ -97,4 +97,24 @@ print(sayHello(name));
 
 String sayHello(String name) =>  "Hello $name nice to meet you!";
 
-/**     ------------------    */
+/**  #3.1 Named Parameters 
+ *  argument에{} 중괄호 추가, default 값 지정
+ *  required
+ *  age : 99,
+ *  country : 'cuba',
+ *  name : 'yuun',
+ * 
+*/
+
+/** #3.3 Optional Positional Parameters
+ * 
+ * Positional parameter는 순서에 맞춰서 입력해야 돼
+ * [String?country = 'cuba'] 있는지 없는지에 따라...
+ */
+
+/** #3.4 QQ Operator 
+ * 물음표 2개 짜리인 operator
+ * ??
+ * ?=
+*/
+
