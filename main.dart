@@ -115,6 +115,13 @@ String sayHello(String name) =>  "Hello $name nice to meet you!";
 /** #3.4 QQ Operator 
  * 물음표 2개 짜리인 operator
  * ??
- * ?=
+ * ??=
 */
+String  capitalizeName(String? name) =>
+  name?.toUpperCase() ?? 'ANON';
+
+/** #3.5 Typedef
+ *  typedef는 좀 더 간단한 데이터의 alias를 만들 때 사용하는 녀석이야
+ *  interger list나 아니면 Map이나 Set처럼 간단한 것들
+ */
 
