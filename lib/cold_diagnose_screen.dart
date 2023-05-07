@@ -32,7 +32,7 @@ class _ColdDiagnoseScreenState extends State<ColdDiagnoseScreen> {
             },
           ),
           CheckboxListTile(
-            title: const Text('가래가 있다'),
+            title: const Text('코가 막힌다'),
             value: _hasPhlegm,
             onChanged: (value) {
               setState(() {
@@ -61,8 +61,10 @@ class _ColdDiagnoseScreenState extends State<ColdDiagnoseScreen> {
           ElevatedButton(
             onPressed: () {
               // TODO: 설문 결과에 따라 진단 결과 출력
+              Navigator.pushNamed(context, '/symptom/cold_diagnose/cold_drug');
             },
             child: const Text('진단하기'),
+
           ),
         ],
       ),
