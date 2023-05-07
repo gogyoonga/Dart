@@ -79,6 +79,7 @@ class SymptomSearch extends StatelessWidget {
     child: ElevatedButton(
                   onPressed: () {
                     // TODO: 여섯 번째 증상 버튼 동작
+                    Navigator.pushNamed(context, '/symptom/etc');
                   },
                   child:const Text('그 외'),
                 ),),

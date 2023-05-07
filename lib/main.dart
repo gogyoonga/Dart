@@ -3,6 +3,7 @@ import 'package:software_homework/search_screen.dart';
 
 import 'cold_diagnose_screen.dart';
 import 'cold_drug_screen.dart';
+import 'etc_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         '/symptom': (context) => const SymptomSearch(),
         '/symptom/cold_diagnose': (context) => const ColdDiagnoseScreen(),
         '/symptom/cold_diagnose/cold_drug': (context) => const ColdDrugScreen(),
-
+        '/symptom/etc': (context) => const EtcScreen(),
       },
 
     );
