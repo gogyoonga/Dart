@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:software_homework/mouth_drug_screen.dart';
 import 'package:software_homework/search_screen.dart';
+import 'package:software_homework/warning.dart';
 
 import 'cold_diagnose_screen.dart';
 import 'cold_drug_screen.dart';
+import 'etc_drug_screen.dart';
 import 'etc_screen.dart';
 
 void main() {
@@ -26,6 +29,8 @@ class MyApp extends StatelessWidget {
         '/symptom/cold_diagnose': (context) => const ColdDiagnoseScreen(),
         '/symptom/cold_diagnose/cold_drug': (context) => const ColdDrugScreen(),
         '/symptom/etc': (context) => const EtcScreen(),
+        '/symptom/etc/warning': (context) => const Warning(),
+        '/symptom/etc/mouth_drug_screen': (context) => const MouthDrugScreen(),
       },
 
     );

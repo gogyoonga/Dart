@@ -11,7 +11,7 @@ class _ColdDrugScreenState extends State<ColdDrugScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-        title: const Text('감기 진단'),
+        title: const Text('약물 추천'),
     ),
     body: Center(
       child: ListView(
