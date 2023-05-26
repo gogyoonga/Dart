@@ -1,29 +1,37 @@
 buildscript {
-    ext.kotlin_version = '1.7.10'
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
     }
-
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:8.1.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10"
+    }
+}
+
+plugins {
+    id 'com.android.application' version "8.1.1"
+    id 'kotlin-android' version "1.8.10"
+}
+
+android {
+    defaultConfig {
+        applicationId "com.example.google.maps_in_flutter"
+        minSdkVersion 20
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
     }
 }
 
 allprojects {
     repositories {
+        gradlePluginPotal()
         google()
         mavenCentral()
     }
-}
-
-rootProject.buildDir = '../build'
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
-    project.evaluationDependsOn(':app')
 }
 
 task clean(type: Delete) {
